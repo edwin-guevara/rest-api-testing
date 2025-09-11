@@ -1,5 +1,9 @@
 'use strict';
 const Hapi = require('@hapi/hapi');
+const joi = require('@hapi/joi');
+const path = require('path');
+const fs = require('fs');
+const routes = [];
 const init = async () => {
   const server = Hapi.server({
     port: 3000,
