@@ -4,6 +4,9 @@ const joi = require('@hapi/joi');
 const path = require('path');
 const fs = require('fs');
 const routes = [];
+const routesPath = path.join(__dirname, 'routes');
+const fileNames = fs.readdirSync('./routes');
+//fileNames.forEach(
 const init = async () => {
   const server = Hapi.server({
     port: 3000,
