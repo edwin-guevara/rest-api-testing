@@ -6,11 +6,18 @@ const fs = require('fs');
 const routes = [];
 const routesPath = path.join(__dirname);
 const fileNames = fs.readdirSync('./routes');
-//fileNames.forEach(
+fileNames.forEach(routesPath.join())
 const init = async () => {
   const server = Hapi.server({
     port: 3000,
     host: 'localhost'
+  });
+  server.route({
+    method: 'routes',
+    path: '/',
+    handler: (request, h) => {
+      return 'Hello World!';
+    }
   });
   await server.start();
   console.log('Server running on %s', server.info.uri);
