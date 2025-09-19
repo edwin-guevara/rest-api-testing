@@ -1,5 +1,5 @@
 'use strict';
-const Hapi = require('@hapi/hapi');
+const hapi = require('@hapi/hapi');
 const joi = require('@hapi/joi');
 const path = require('path');
 const fs = require('fs');
