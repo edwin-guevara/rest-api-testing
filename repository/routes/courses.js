@@ -1,5 +1,5 @@
 const Joi = require('@hapi/joi');
-const coursesController = 'idk'
+const coursesController = require('../controllers/courses');
 module.exports = [];
 const init = async () => {
     const server = Hapi.server({
