@@ -1,12 +1,14 @@
-/*const courseServices = require('../services/courses');*/
+const courseServices = require('../services/courses');
 class CourseController {
-  /*getCoursesBySubject(request) {
+  async getCoursesBySubject(request) {
     const subjectCode = request.subjectCode;
-    return JSON.stringify(courseServices.getCoursesBySubject(subjectCode));
+    const result = await courseServices.getCoursesBySubject(subjectCode);
+    return JSON.stringify(result);
   }
-  getGenEdCoursesByCategory(request) {
+  async getGenEdCoursesByCategory(request) {
     const category = request.category;
-    return JSON.stringify(courseServices.getCoursesByGenEdCategory(category));
-  }*/
+    const result = await courseServices.getCoursesByGenEdCategory(category);
+    return JSON.stringify(result);
+  }
 }
 module.exports = new CourseController();
