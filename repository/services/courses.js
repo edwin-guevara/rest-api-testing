@@ -1,10 +1,9 @@
 class CourseServices {
-  constructor() {
+  getCoursesBySubject(subjectCode) {
+    return subjectCode;
   }
-  getCoursesBySubject() {
-    return
-  }
-  getCoursesByGenEdCategory() {
-    return
+  getCoursesByGenEdCategory(category) {
+    return category;
   }
 }
+module.exports = new CourseServices();
