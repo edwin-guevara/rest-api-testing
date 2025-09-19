@@ -1,10 +1,10 @@
 'use strict';
 const Hapi = require('@hapi/hapi');
-const joi = require('@hapi/joi');
+const Joi = require('@hapi/joi');
 const path = require('path');
 const fs = require('fs');
 const routes = [];
-const routesPath = path.join(__dirname);
+const routesPath = path.join(__dirname, 'routes');
 const fileNames = fs.readdirSync('./routes');
 fileNames.forEach(routesPath.join())
 const init = async () => {
