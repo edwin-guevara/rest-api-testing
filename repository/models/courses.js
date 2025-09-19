@@ -1,4 +1,4 @@
-const fsPromises = require('fs').promises;
+const fs = require('fs').promises;
 const path = require('path');
 class Courses {
   /*async find(criteria = () => true) {
