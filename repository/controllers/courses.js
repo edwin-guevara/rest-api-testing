@@ -1,10 +1,12 @@
+/*const courseServices = require('../services/courses');*/
 class CourseController {
-  constructor(module.exports) {
-    // this. = 
+  /*getCoursesBySubject(request) {
+    const subjectCode = request.subjectCode;
+    return JSON.stringify(courseServices.getCoursesBySubject(subjectCode));
   }
-  getCoursesBySubject() {
-    return
-  }
-  getGenEdCoursesByCategory() {
-    return
-  }
+  getGenEdCoursesByCategory(request) {
+    const category = request.category;
+    return JSON.stringify(courseServices.getCoursesByGenEdCategory(category));
+  }*/
+}
+module.exports = new CourseController();
